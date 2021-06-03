@@ -67,13 +67,18 @@ button {
   cursor: pointer;
 }
 
-.habit {
-  font-size: 1.5rem;
-  display: flex;
-  padding: 0.5rem 1rem;
-  align-items: center;
+.habit-wrapper {
   list-style: none;
   user-select: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .habit-name: {
@@ -104,13 +109,29 @@ button {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.habit-increase {
+.habit-increase-btn {
   color: red;
 }
-.habit-decrease {
+.habit-decrease-btn {
   color: blue;
 }
 
-.habit-delete {
+.habit-delete-btn {
   color: darkred;
+}
+
+.habit-edit-btn {
+  color: lightseagreen;
+}
+
+.habit-edit {
+  display: flex;
+  align-items: center;
+}
+
+.habit-edit button {
+  padding: 0.5rem;
+  font-weight: 700;
+  background-color: lightseagreen;
+  color: white;
 }

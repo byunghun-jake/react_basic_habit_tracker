@@ -13,6 +13,7 @@ class Habits extends Component {
               onIncrement={this.props.onIncrement}
               onDecrement={this.props.onDecrement}
               onDelete={this.props.onDelete}
+              onEdit={this.props.onEdit}
             />
           )
         })}

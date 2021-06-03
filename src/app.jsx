@@ -6,8 +6,6 @@ import Header from "./components/header"
 
 class App extends Component {
   state = {
-    // activatedCount: 0,
-    habitName: "",
     habits: [
       { name: "Reading", count: 0, id: 1 },
       { name: "Coding", count: 0, id: 2 },
@@ -53,13 +51,23 @@ class App extends Component {
 
   handleReset = () => {
     const habits = this.state.habits.map((habit) => {
-      // habit.count = 0
-      // console.log(...this.state.habits)
-      // alert("hi")
+      if (habit.count === 0) {
+        return habit
+      }
       return {
         ...habit,
         count: 0,
       }
+    })
+    this.setState({ habits })
+  }
+
+  handleEdit = (habit) => {
+    const habits = this.state.habits.map((item) => {
+      if (item.id === habit.id) {
+        return habit
+      }
+      return item
     })
     this.setState({ habits })
   }
@@ -72,15 +80,13 @@ class App extends Component {
             this.state.habits.filter((habit) => habit.count > 0).length
           }
         />
-        <HabitAddForm
-          onAddHabit={this.handleAdd}
-          habitName={this.state.habitName}
-        />
+        <HabitAddForm onAddHabit={this.handleAdd} />
         <Habits
           habits={this.state.habits}
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
+          onEdit={this.handleEdit}
         />
         <button className="reset-button" onClick={this.handleReset}>
           RESET
