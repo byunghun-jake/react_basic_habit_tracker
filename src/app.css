@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* header */
 .header {
   padding: 1.5rem;
@@ -30,7 +34,7 @@
 }
 
 /* Input */
-.input-wrapper {
+.habit-form {
   padding: 1.5rem 2rem;
 }
 
