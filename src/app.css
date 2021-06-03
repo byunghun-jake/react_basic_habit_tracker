@@ -1,0 +1,112 @@
+/* header */
+.header {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+.header-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.header-name {
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.header-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: lightpink;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+/* Input */
+.input-wrapper {
+  padding: 1.5rem 2rem;
+}
+
+.input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  outline: none;
+  border: 1px solid lightseagreen;
+}
+
+.input-button {
+  padding: 0.5rem;
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* Reset */
+.reset-button {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  background-color: red;
+  font-weight: 700;
+  color: white;
+}
+
+/* Habits */
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.habit {
+  font-size: 1.5rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  list-style: none;
+  user-select: none;
+}
+
+.habit-name: {
+}
+
+.habit-count {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 0.25rem;
+  margin-right: 0.5rem;
+  line-height: 40px;
+  text-align: center;
+  background-color: teal;
+  border-radius: 50%;
+  color: white;
+}
+
+.habit-button {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.habit-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.habit-increase {
+  color: red;
+}
+.habit-decrease {
+  color: blue;
+}
+
+.habit-delete {
+  color: darkred;
+}
